@@ -57,6 +57,7 @@ class _BottomMenuFormState extends State<BottomMenuForm> {
               height: 200,
               width: double.infinity,
               decoration: BoxDecoration(
+                  color: checkedValue == false ? Colors.grey : Colors.white,
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(
                   color: Colors.black
@@ -67,6 +68,7 @@ class _BottomMenuFormState extends State<BottomMenuForm> {
                 obscureText: false,
                 maxLines: null,
                 decoration: InputDecoration(
+
                   border: InputBorder.none,
                   contentPadding:EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 10.0),
                 ),
