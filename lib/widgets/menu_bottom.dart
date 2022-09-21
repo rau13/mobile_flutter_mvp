@@ -8,7 +8,7 @@ class BottomMenuForm extends StatefulWidget {
 }
 
 class _BottomMenuFormState extends State<BottomMenuForm> {
-  var checkedValue = false;
+  var checkedValue = true;
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -61,6 +61,15 @@ class _BottomMenuFormState extends State<BottomMenuForm> {
                 border: Border.all(
                   color: Colors.black
                 )
+              ),
+              child: TextField(
+                enabled: checkedValue,
+                obscureText: false,
+                maxLines: null,
+                decoration: InputDecoration(
+                  border: InputBorder.none,
+                  contentPadding:EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 10.0),
+                ),
               ),
             ),
             SizedBox(
